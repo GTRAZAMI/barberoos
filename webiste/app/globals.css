@@ -1,0 +1,421 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #11100e;
+  --foreground: #f8f1e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.section-shell {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding: 6rem 1.25rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+  max-width: 48rem;
+}
+
+.section-heading > p:first-child {
+  color: #d6aa63;
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin-top: .75rem;
+  font-size: clamp(2.2rem, 5vw, 4.7rem);
+  font-weight: 950;
+  line-height: .96;
+  letter-spacing: 0;
+}
+
+.catalog-hero {
+  position: relative;
+  min-height: 34rem;
+  overflow: hidden;
+  background:
+    linear-gradient(115deg, rgba(17, 16, 14, .96), rgba(17, 16, 14, .78)),
+    url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1800&q=85") center / cover;
+}
+
+.catalog-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -30% 35%;
+  height: 22rem;
+  background: radial-gradient(circle, rgba(214, 170, 99, .28), transparent 60%);
+  pointer-events: none;
+}
+
+.depth-card,
+.barber-card,
+.product-card,
+.booking-panel,
+.cart-panel,
+.checkout-panel,
+.hero-console,
+.service-detail-card {
+  border: 1px solid rgba(255, 255, 255, .1);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .035)),
+    #171411;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .38);
+}
+
+.category-chip {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .055);
+  color: #f8f1e7;
+  padding: .75rem 1rem;
+  font-size: .86rem;
+  font-weight: 900;
+  transition: transform .25s ease, border-color .25s ease, background .25s ease, color .25s ease;
+}
+
+.category-chip-active {
+  border-color: rgba(214, 170, 99, .7);
+  background: rgba(214, 170, 99, .16);
+  color: #d6aa63;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .category-chip:hover {
+    border-color: rgba(214, 170, 99, .7);
+    background: rgba(214, 170, 99, .16);
+    color: #d6aa63;
+  }
+}
+
+.depth-card {
+  min-height: 21rem;
+  padding: 1.5rem;
+  transform-style: preserve-3d;
+  transition: transform .45s ease, border-color .45s ease, box-shadow .45s ease;
+}
+
+.depth-card:hover {
+  border-color: rgba(214, 170, 99, .55);
+  box-shadow: 0 40px 110px rgba(0, 0, 0, .55), 0 0 0 1px rgba(214, 170, 99, .18);
+  transform: translateY(-.5rem) rotateX(3deg) rotateY(-4deg);
+}
+
+.service-detail-card {
+  min-height: 18rem;
+  padding: 1.5rem;
+  transition: transform .4s ease, border-color .4s ease, box-shadow .4s ease;
+}
+
+.service-detail-card:hover {
+  border-color: rgba(214, 170, 99, .55);
+  box-shadow: 0 36px 95px rgba(0, 0, 0, .46);
+  transform: translateY(-.4rem);
+}
+
+.barber-card,
+.product-card,
+.gallery-frame {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform .45s ease, border-color .45s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .barber-card:hover,
+  .product-card:hover,
+  .gallery-frame:hover {
+    transform: translateY(-.45rem);
+  }
+}
+
+.product-card img {
+  pointer-events: none;
+}
+
+.product-card button,
+.cart-panel button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.gallery-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(255, 255, 255, .1);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
+}
+
+.perspective-dramatic {
+  perspective: 1100px;
+}
+
+.hero-console {
+  margin-left: auto;
+  max-width: 30rem;
+  padding: 1.5rem;
+  transform: rotateY(-13deg) rotateX(8deg);
+}
+
+.service-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(0, 0, 0, .28);
+  padding: 1rem;
+  transform: translateZ(2rem);
+}
+
+.booking-panel,
+.cart-panel {
+  padding: 1.25rem;
+}
+
+.checkout-panel {
+  padding: 1.25rem;
+}
+
+.checkout-label {
+  display: grid;
+  gap: .55rem;
+}
+
+.checkout-label span {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: #d6aa63;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.checkout-label input,
+.checkout-label textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(0, 0, 0, .24);
+  color: #f8f1e7;
+  font: inherit;
+  outline: 0;
+  padding: .95rem 1rem;
+}
+
+.checkout-label textarea {
+  resize: vertical;
+}
+
+.checkout-label input:focus,
+.checkout-label textarea:focus {
+  border-color: rgba(214, 170, 99, .75);
+  box-shadow: 0 0 0 1px rgba(214, 170, 99, .2);
+}
+
+.checkout-label input[readonly] {
+  cursor: not-allowed;
+  opacity: .72;
+}
+
+.checkout-label input::placeholder,
+.checkout-label textarea::placeholder {
+  color: #8f8375;
+}
+
+.location-row {
+  display: grid;
+  gap: .75rem;
+}
+
+.location-row button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border: 0;
+  background: #d6aa63;
+  color: #11100e;
+  padding: .95rem 1rem;
+  font-weight: 900;
+}
+
+@media (min-width: 760px) {
+  .location-row {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.booking-search {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(0, 0, 0, .22);
+  color: #d6aa63;
+  padding: .8rem .9rem;
+}
+
+.booking-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #f8f1e7;
+  font: inherit;
+  font-size: .95rem;
+}
+
+.booking-search input::placeholder {
+  color: #8f8375;
+}
+
+.mini-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-block: .8rem;
+}
+
+.mini-tabs button {
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .055);
+  color: #d8cec0;
+  padding: .55rem .75rem;
+  font-size: .78rem;
+  font-weight: 900;
+  transition: border-color .25s ease, background .25s ease, color .25s ease;
+}
+
+.mini-tabs button:hover,
+.mini-tabs .mini-tab-active {
+  border-color: rgba(214, 170, 99, .7);
+  background: rgba(214, 170, 99, .16);
+  color: #d6aa63;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.choice-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.choice,
+.time-slot {
+  min-height: 4.3rem;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .055);
+  color: #f8f1e7;
+  padding: .9rem;
+  text-align: left;
+  transition: transform .25s ease, border-color .25s ease, background .25s ease;
+}
+
+.choice span {
+  display: block;
+  font-weight: 900;
+}
+
+.choice small {
+  display: block;
+  margin-top: .35rem;
+  color: #cabbab;
+}
+
+.barber-choice {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.barber-avatar {
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  border: 2px solid rgba(214, 170, 99, .65);
+  object-fit: cover;
+}
+
+.choice-active,
+.time-active {
+  border-color: #d6aa63;
+  background: rgba(214, 170, 99, .16);
+  box-shadow: inset 0 0 0 1px rgba(214, 170, 99, .25);
+}
+
+.choice:hover,
+.time-slot:hover {
+  transform: translateY(-.2rem);
+  border-color: rgba(214, 170, 99, .55);
+}
+
+.time-slot {
+  display: grid;
+  min-height: 3.3rem;
+  place-items: center;
+  text-align: center;
+  font-weight: 900;
+}
+
+.float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-shell {
+    padding-block: 4rem;
+  }
+
+  .choice-grid,
+  .choice-grid.three {
+    grid-template-columns: 1fr;
+  }
+}

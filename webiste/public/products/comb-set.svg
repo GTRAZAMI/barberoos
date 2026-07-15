@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <rect width="700" height="700" fill="#d9c8b1"/>
+  <rect x="165" y="210" width="370" height="74" rx="16" fill="#11100e" transform="rotate(-18 350 247)"/>
+  <g stroke="#d6aa63" stroke-width="9" stroke-linecap="round"><path d="M208 292l-24 88"/><path d="M252 278l-24 88"/><path d="M296 264l-24 88"/><path d="M340 250l-24 88"/><path d="M384 236l-24 88"/><path d="M428 222l-24 88"/></g>
+  <rect x="226" y="370" width="290" height="54" rx="12" fill="#f8f1e7"/>
+  <text x="371" y="407" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#11100e">COMB SET</text>
+  <ellipse cx="350" cy="545" rx="210" ry="34" fill="#11100e" opacity=".15"/>
+</svg>

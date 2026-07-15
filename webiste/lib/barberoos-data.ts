@@ -1,0 +1,191 @@
+export const services = [
+  {
+    name: "Signature Fade",
+    category: "Haircuts",
+    duration: "45 min",
+    price: 28,
+    detail: "Clean skin fade, razor line, textured finish, and style advice.",
+  },
+  {
+    name: "Classic Cut",
+    category: "Haircuts",
+    duration: "35 min",
+    price: 22,
+    detail: "Sharp everyday cut shaped to your head, hair type, and routine.",
+  },
+  {
+    name: "Scissor Cut",
+    category: "Haircuts",
+    duration: "50 min",
+    price: 32,
+    detail: "Longer precision work with natural movement and a polished finish.",
+  },
+  {
+    name: "Buzz Cut",
+    category: "Haircuts",
+    duration: "25 min",
+    price: 16,
+    detail: "Clean clipper cut, edge cleanup, and neckline finish.",
+  },
+  {
+    name: "Beard Ritual",
+    category: "Beard",
+    duration: "30 min",
+    price: 18,
+    detail: "Beard sculpting, hot towel, oil, and neckline cleanup.",
+  },
+  {
+    name: "Royal Shave",
+    category: "Beard",
+    duration: "35 min",
+    price: 24,
+    detail: "Straight razor shave with steam towel, balm, and calm finish.",
+  },
+  {
+    name: "Beard Color",
+    category: "Beard",
+    duration: "40 min",
+    price: 30,
+    detail: "Natural beard tone correction with shape and aftercare guidance.",
+  },
+  {
+    name: "Full Grooming",
+    category: "Packages",
+    duration: "70 min",
+    price: 45,
+    detail: "Haircut, beard, hot towel, styling, and aftercare advice.",
+  },
+  {
+    name: "Groom & Facial",
+    category: "Packages",
+    duration: "85 min",
+    price: 58,
+    detail: "Full grooming plus cleansing facial for a complete refresh.",
+  },
+  {
+    name: "Kids Cut",
+    category: "Family",
+    duration: "25 min",
+    price: 14,
+    detail: "Patient, clean cut for young clients with a comfortable pace.",
+  },
+  {
+    name: "Hair Wash",
+    category: "Care",
+    duration: "15 min",
+    price: 8,
+    detail: "Deep cleanse and conditioning before or after a cut.",
+  },
+  {
+    name: "Styling Finish",
+    category: "Care",
+    duration: "20 min",
+    price: 12,
+    detail: "Blow dry, product application, and shape for events or daily polish.",
+  },
+];
+
+export const barbers = [
+  {
+    name: "Yassine",
+    role: "Fade specialist",
+    rating: "4.9",
+    image: "https://images.unsplash.com/photo-1618077360395-f3068be8e001?auto=format&fit=crop&w=700&q=80",
+  },
+  {
+    name: "Amine",
+    role: "Beard architect",
+    rating: "4.8",
+    image: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80",
+  },
+  {
+    name: "Arbi",
+    role: "Classic cuts",
+    rating: "5.0",
+    image: "/arbi.png",
+  },
+];
+
+export const times = ["09:30", "10:15", "11:00", "12:30", "14:00", "15:45", "17:00", "18:30"];
+
+export const products = [
+  {
+    id: 1,
+    name: "Matte Clay",
+    category: "Styling",
+    price: 19,
+    description: "Strong hold with a dry matte finish for textured cuts.",
+    image: "/products/matte-clay.svg",
+  },
+  {
+    id: 2,
+    name: "Beard Oil",
+    category: "Beard Care",
+    price: 16,
+    description: "Softens the beard and keeps the skin under it comfortable.",
+    image: "/products/beard-oil.svg",
+  },
+  {
+    id: 3,
+    name: "Daily Shampoo",
+    category: "Hair Care",
+    price: 14,
+    description: "Clean daily wash that does not strip hair after styling.",
+    image: "/products/daily-shampoo.svg",
+  },
+  {
+    id: 4,
+    name: "Texture Powder",
+    category: "Styling",
+    price: 17,
+    description: "Lightweight volume for messy crops, fades, and quiffs.",
+    image: "/products/texture-powder.svg",
+  },
+  {
+    id: 5,
+    name: "Sea Salt Spray",
+    category: "Styling",
+    price: 15,
+    description: "Natural movement and grip without a heavy product feel.",
+    image: "/products/sea-salt-spray.svg",
+  },
+  {
+    id: 6,
+    name: "Beard Balm",
+    category: "Beard Care",
+    price: 18,
+    description: "Shape control and moisture for medium to long beards.",
+    image: "/products/beard-balm.svg",
+  },
+  {
+    id: 7,
+    name: "Aftershave Balm",
+    category: "Skin Care",
+    price: 13,
+    description: "Soothing post-shave balm with a clean barbershop scent.",
+    image: "/products/aftershave-balm.svg",
+  },
+  {
+    id: 8,
+    name: "Comb Set",
+    category: "Tools",
+    price: 11,
+    description: "Pocket and styling combs for precise daily control.",
+    image: "/products/comb-set.svg",
+  },
+  {
+    id: 9,
+    name: "Grooming Kit",
+    category: "Bundles",
+    price: 39,
+    description: "A complete starter bundle for hair, beard, and aftercare.",
+    image: "/products/grooming-kit.svg",
+  },
+];
+
+export const gallery = [
+  "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1593702288056-f07ee057d85c?auto=format&fit=crop&w=900&q=80",
+];
