@@ -1,3 +1,5 @@
+import { sitePath } from "@/lib/site-path";
+
 export const services = [
   {
     name: "Signature Fade",
@@ -102,7 +104,7 @@ export const barbers = [
     name: "Arbi",
     role: "Classic cuts",
     rating: "5.0",
-    image: "/arbi.png",
+    image: sitePath("/arbi.png"),
   },
 ];
 
@@ -115,7 +117,7 @@ export const products = [
     category: "Styling",
     price: 19,
     description: "Strong hold with a dry matte finish for textured cuts.",
-    image: "/products/matte-clay.svg",
+    image: sitePath("/products/matte-clay.svg"),
   },
   {
     id: 2,
@@ -123,7 +125,7 @@ export const products = [
     category: "Beard Care",
     price: 16,
     description: "Softens the beard and keeps the skin under it comfortable.",
-    image: "/products/beard-oil.svg",
+    image: sitePath("/products/beard-oil.svg"),
   },
   {
     id: 3,
@@ -131,7 +133,7 @@ export const products = [
     category: "Hair Care",
     price: 14,
     description: "Clean daily wash that does not strip hair after styling.",
-    image: "/products/daily-shampoo.svg",
+    image: sitePath("/products/daily-shampoo.svg"),
   },
   {
     id: 4,
@@ -139,7 +141,7 @@ export const products = [
     category: "Styling",
     price: 17,
     description: "Lightweight volume for messy crops, fades, and quiffs.",
-    image: "/products/texture-powder.svg",
+    image: sitePath("/products/texture-powder.svg"),
   },
   {
     id: 5,
@@ -147,7 +149,7 @@ export const products = [
     category: "Styling",
     price: 15,
     description: "Natural movement and grip without a heavy product feel.",
-    image: "/products/sea-salt-spray.svg",
+    image: sitePath("/products/sea-salt-spray.svg"),
   },
   {
     id: 6,
@@ -155,7 +157,7 @@ export const products = [
     category: "Beard Care",
     price: 18,
     description: "Shape control and moisture for medium to long beards.",
-    image: "/products/beard-balm.svg",
+    image: sitePath("/products/beard-balm.svg"),
   },
   {
     id: 7,
@@ -163,7 +165,7 @@ export const products = [
     category: "Skin Care",
     price: 13,
     description: "Soothing post-shave balm with a clean barbershop scent.",
-    image: "/products/aftershave-balm.svg",
+    image: sitePath("/products/aftershave-balm.svg"),
   },
   {
     id: 8,
@@ -171,7 +173,7 @@ export const products = [
     category: "Tools",
     price: 11,
     description: "Pocket and styling combs for precise daily control.",
-    image: "/products/comb-set.svg",
+    image: sitePath("/products/comb-set.svg"),
   },
   {
     id: 9,
@@ -179,7 +181,7 @@ export const products = [
     category: "Bundles",
     price: 39,
     description: "A complete starter bundle for hair, beard, and aftercare.",
-    image: "/products/grooming-kit.svg",
+    image: sitePath("/products/grooming-kit.svg"),
   },
 ];
 
@@ -187,5 +189,5 @@ export const gallery = [
   "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80",
   "https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=80",
   "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1593702288056-f07ee057d85c?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80",
 ];
