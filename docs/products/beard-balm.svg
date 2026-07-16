@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <rect width="700" height="700" fill="#f1e6d8"/>
+  <ellipse cx="350" cy="365" rx="210" ry="130" fill="#11100e"/>
+  <ellipse cx="350" cy="342" rx="200" ry="112" fill="#3a2a1c"/>
+  <ellipse cx="350" cy="310" rx="180" ry="92" fill="#d6aa63"/>
+  <text x="350" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#11100e">BEARD</text>
+  <text x="350" y="346" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#11100e">BALM</text>
+  <ellipse cx="350" cy="512" rx="215" ry="38" fill="#11100e" opacity=".15"/>
+</svg>

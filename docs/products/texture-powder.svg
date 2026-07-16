@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <rect width="700" height="700" fill="#e9ddcb"/>
+  <g opacity=".25" fill="#11100e"><circle cx="170" cy="160" r="16"/><circle cx="520" cy="214" r="11"/><circle cx="484" cy="510" r="18"/><circle cx="232" cy="472" r="10"/></g>
+  <rect x="250" y="142" width="200" height="385" rx="28" fill="#11100e"/>
+  <rect x="278" y="180" width="144" height="248" rx="16" fill="#f8f1e7"/>
+  <text x="350" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#11100e">TEXTURE</text>
+  <text x="350" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#d6aa63">POWDER</text>
+  <path d="M290 448h120" stroke="#d6aa63" stroke-width="18" stroke-linecap="round"/>
+  <ellipse cx="350" cy="548" rx="176" ry="32" fill="#11100e" opacity=".16"/>
+</svg>
