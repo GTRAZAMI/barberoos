@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { products } from "@/lib/barberoos-data";
+import { sitePath } from "@/lib/site-path";
 import { useCart } from "@/lib/use-cart";
 
 const categories = ["All", ...Array.from(new Set(products.map((product) => product.category)))];
@@ -129,7 +130,7 @@ export function ProductsExperience() {
                 <span>Total</span>
                 <span>${cartTotal}</span>
               </div>
-              <a href="/checkout" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
+              <a href={sitePath("/checkout")} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
                 Checkout <ChevronRight size={18} />
               </a>
               <p className="mt-4 flex items-start gap-2 text-sm text-[#cabbab]">

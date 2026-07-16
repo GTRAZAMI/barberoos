@@ -2,6 +2,7 @@ import { ArrowRight, Clock, Scissors, Sparkles } from "lucide-react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { services } from "@/lib/barberoos-data";
+import { sitePath } from "@/lib/site-path";
 
 export const metadata = {
   title: "Services | Barberoos Barber Shop",
@@ -66,7 +67,7 @@ export default function ServicesPage() {
                         <span className="flex items-center gap-2 text-sm text-[#d8cec0]">
                           <Clock size={16} /> {service.duration}
                         </span>
-                        <a href={`/#booking`} className="inline-flex items-center gap-2 font-black text-[#d6aa63]">
+                        <a href={sitePath("/#booking")} className="inline-flex items-center gap-2 font-black text-[#d6aa63]">
                           Book <ArrowRight size={16} />
                         </a>
                       </div>

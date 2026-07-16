@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /barberoos
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,8 +31,11 @@ jobs:
           cache-dependency-path: webiste/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         working-directory: webiste
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Build static website
         run: npm run build

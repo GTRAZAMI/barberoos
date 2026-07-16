@@ -6,6 +6,7 @@ import { FormEvent, useMemo, useState } from "react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { products } from "@/lib/barberoos-data";
+import { sitePath } from "@/lib/site-path";
 import { useCart } from "@/lib/use-cart";
 
 const deliveryMessage = "Free livraison in Casablanca for orders over $30. Delivery fees can be edited later from the admin panel.";
@@ -71,7 +72,7 @@ export default function CheckoutPage() {
             </div>
             <h2 className="mt-6 text-3xl font-black">Commande confirmee.</h2>
             <p className="mt-3 text-[#cabbab]">Merci. Votre pannier est maintenant vide. The next step can connect this confirmation to WhatsApp, email, or the admin dashboard.</p>
-            <a href="/products" className="mt-7 inline-flex items-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
+            <a href={sitePath("/products")} className="mt-7 inline-flex items-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
               Back to shop <ChevronRight size={18} />
             </a>
           </div>

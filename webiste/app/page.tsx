@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { barbers, gallery, products, services, times } from "@/lib/barberoos-data";
+import { sitePath } from "@/lib/site-path";
 import { useCart } from "@/lib/use-cart";
 
 export default function Home() {
@@ -71,7 +72,7 @@ export default function Home() {
                 Reserve your chair <ArrowRight size={18} />
               </a>
               <a
-                href="/products"
+                href={sitePath("/products")}
                 className="inline-flex items-center justify-center gap-2 rounded border border-white/20 px-6 py-4 font-bold text-white transition hover:-translate-y-1 hover:border-[#d6aa63] hover:text-[#d6aa63]"
               >
                 Shop products <ShoppingBag size={18} />
@@ -129,7 +130,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <a href="/services" className="mt-8 inline-flex items-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
+        <a href={sitePath("/services")} className="mt-8 inline-flex items-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
           View all services <ChevronRight size={18} />
         </a>
       </section>
@@ -221,7 +222,7 @@ export default function Home() {
                   {showAllServices ? "Show less" : `Show ${filteredBookingServices.length - 4} more`}
                 </button>
               )}
-              <a href="/services" className="inline-flex text-sm font-bold text-[#d6aa63]">
+              <a href={sitePath("/services")} className="inline-flex text-sm font-bold text-[#d6aa63]">
                 Full menu
               </a>
             </div>
@@ -296,7 +297,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <a href="/products" className="mt-8 inline-flex items-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
+        <a href={sitePath("/products")} className="mt-8 inline-flex items-center gap-2 rounded bg-[#f8f1e7] px-5 py-4 font-black text-[#11100e] transition hover:bg-[#d6aa63]">
           View all products <ChevronRight size={18} />
         </a>
       </section>
