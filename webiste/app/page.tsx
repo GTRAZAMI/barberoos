@@ -64,6 +64,32 @@ export default function Home() {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#e1d5c7]">
               A sharp, modern barbershop experience where clients can discover the craft, choose their barber, reserve a time, and buy grooming essentials in one visit.
             </p>
+
+            <div className="hero-console mobile-hero-console mt-7 lg:hidden">
+              <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                <span className="text-xs uppercase tracking-[0.24em] text-[#d6aa63]">Today offers</span>
+                <span className="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-bold text-emerald-200">8 slots open</span>
+              </div>
+              <div className="mt-4 grid gap-3">
+                {featuredServices.slice(0, 3).map((item) => (
+                  <div key={item.name} className="service-tile">
+                    <div>
+                      <p className="font-bold">{item.name}</p>
+                      <p className="text-sm text-[#cabbab]">{item.duration}</p>
+                    </div>
+                    <span className="text-xl font-black text-[#d6aa63]">${item.price}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-4 flex items-center gap-3 rounded bg-black/30 p-3">
+                <Clock className="shrink-0 text-[#d6aa63]" size={20} />
+                <div>
+                  <p className="font-bold">Next appointment</p>
+                  <p className="text-sm text-[#cabbab]">11:00 with {barbers[0].name}</p>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#booking"
